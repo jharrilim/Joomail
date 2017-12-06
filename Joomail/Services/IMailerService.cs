@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Joomail.Services
 {
-    interface IMailerService: IMailer
+    public interface IMailerService : IMailer
     {
 		void SendNotification();
 		Task CheckMail();

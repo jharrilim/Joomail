@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joomail", "Joomail\Joomail.csproj", "{922E2985-812A-4CDE-AF64-E6C9C2037253}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Joomail", "Joomail\Joomail.csproj", "{922E2985-812A-4CDE-AF64-E6C9C2037253}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joomail.Tests", "Joomail.Tests\Joomail.Tests.csproj", "{2E38CA93-3F36-4D80-9982-785553A0204C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{922E2985-812A-4CDE-AF64-E6C9C2037253}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{922E2985-812A-4CDE-AF64-E6C9C2037253}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{922E2985-812A-4CDE-AF64-E6C9C2037253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E38CA93-3F36-4D80-9982-785553A0204C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E38CA93-3F36-4D80-9982-785553A0204C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E38CA93-3F36-4D80-9982-785553A0204C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E38CA93-3F36-4D80-9982-785553A0204C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

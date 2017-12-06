@@ -7,7 +7,7 @@ using Joomail.Models.Notification;
 
 namespace Joomail.Services
 {
-	internal abstract class ScheduledMailService : IScheduledPollingService
+	public abstract class ScheduledMailService : IScheduledPollingService
 	{
 		private double UpdateTime { get; }
 		private Timer Timer { get; }
@@ -17,6 +17,7 @@ namespace Joomail.Services
 			UpdateTime = updateInterval;
 			this.Timer = new Timer(updateInterval);
 		}
+
 		public abstract Task CheckMail();
 
 		public void StartPolling()

@@ -6,9 +6,8 @@ using System.Net.Mail;
 
 namespace Joomail.Models.Mail
 {
-    internal interface IMailer
+    public interface IMailer
     {
 		void SendMail(MailMessage mailMessage);
-
     }
 }
