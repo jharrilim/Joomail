@@ -3,8 +3,9 @@ using System.Net.Mail;
 using Xunit;
 using Joomail.Models.Mail;
 
-namespace Joomail.Tests.Models
+namespace Joomail.Tests.Models.Mail
 {
+	[Trait("Category", "Mail")]
     public class MailBuilderTests
     {
 		[Theory]

@@ -11,14 +11,22 @@ using Microsoft.Extensions.Options;
 
 namespace Joomail
 {
-    public class Startup
-    {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
+	public class Startup
+	{
+		public static string UserCryptoSecret { get; }
 
         public IConfiguration Configuration { get; }
+
+        public Startup(IConfiguration configuration)
+        {
+			// TODO: put this configuration crap together
+			var builder = new ConfigurationBuilder();
+			Environment.SetEnvironmentVariable("userCryptoPassword", builder.AddUserSecrets<Startup>()
+				.Build()
+				.GetValue<string>("userCryptoSecret"));
+            Configuration = configuration;
+
+        }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -33,7 +41,6 @@ namespace Joomail
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseMvc();
         }
     }

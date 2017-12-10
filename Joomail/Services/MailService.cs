@@ -8,6 +8,8 @@ namespace Joomail.Services
 {
 	public class MailService : ScheduledMailService
 	{
+		public List<MailMessage> Inbox { get; }
+
 		public MailService(double updateInterval = 60000) : base(updateInterval) { }
 
 		public override Task CheckMail()
